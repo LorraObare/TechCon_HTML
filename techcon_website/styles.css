@@ -1,212 +1,177 @@
+/* ===== GLOBAL STYLES ===== */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f9fafb;
-    color: #333;
-  }
-  header {
-    background-color: #1e293b;
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 2em;
-    letter-spacing: 1px;
-  }
-  nav {
-    background-color: #334155;
-  }
-
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  nav li {
-    margin: 0 20px;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.05em;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-  main {
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  main section {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  main h2 {
-    color: #1e293b;
-    margin-bottom: 15px;
-  }
-
-  main h1 {
-    color: #0f172a;
-    margin-bottom: 10px;
-  }
-
-  main p {
-    font-size: 1.05em;
-    line-height: 1.6;
-    color: #555;
-  }
-
-  video {
-    margin-top: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-  }
-
-  footer {
-    text-align: center;
-    background-color: #1e293b;
-    color: white;
-    padding: 15px 0;
-    margin-top: 40px;
-  }
-
-  footer p {
-    margin: 0;
-    font-size: 0.95em;
-  }
-
-#past-speakers {
-  text-align: center;
-  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
   background-color: #f9fafb;
+  color: #333;
 }
 
-#past-speakers h2 {
+/* ===== HEADER ===== */
+header {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+header h1 {
+  margin: 0;
   font-size: 2em;
-  margin-bottom: 30px;
-  color: #222;
 }
 
-.speakers-container {
+/* ===== NAVIGATION ===== */
+nav {
+  background-color: #334155;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
 }
 
-.speaker-card {
-  background: white;
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+main section,
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  padding: 20px;
-  text-align: center;
 }
 
-.speaker-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 12px;
+main h2 {
+  color: #1e293b;
   margin-bottom: 15px;
 }
 
-.speaker-card h3 {
-  color: #111;
+main h1 {
+  color: #0f172a;
   margin-bottom: 10px;
 }
 
-.speaker-card p {
-  font-size: 0.95em;
+main p {
+  font-size: 1.05em;
+  line-height: 1.6;
   color: #555;
-  line-height: 1.5;
 }
 
-body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9fafb;
-      color: #333;
-    }
+/* ===== FORM ELEMENTS ===== */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1e293b;
+  text-align: left;
+}
 
-    header {
-      background-color: #1e293b;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
 
-    nav {
-      background-color: #334155;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
+.checkbox-group {
+  margin-bottom: 20px;
+  font-size: 0.95em;
+  text-align: left;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+input[type="checkbox"] {
+  margin-right: 8px;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e40af;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-    main {
-      padding: 40px 20px;
-    }
+button:hover {
+  background-color: #1d4ed8;
+}
 
-    table {
-      width: 90%;
-      margin: 0 auto;
-      border-collapse: collapse;
-      background-color: white;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+/* ===== VIDEO STYLING ===== */
+video {
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
 
-    caption {
-      caption-side: top;
-      font-size: 1.3em;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
+/* ===== TABLE STYLES (for schedule.html) ===== */
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: left;
-    }
+caption {
+  caption-side: top;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
-    th {
-      background-color: #e2e8f0;
-    }
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
 
-    tr:nth-child(even) {
-      background-color: #f1f5f9;
-    }
+th {
+  background-color: #e2e8f0;
+}
 
-    footer {
-      text-align: center;
-      background-color: #1e293b;
-      color: white;
-      padding: 15px 0;
-      margin-top: 40px;
-    }
+tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background-color: #1e293b;
+  color: white;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95em;
+}
