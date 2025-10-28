@@ -1,4 +1,4 @@
-<h1>Hallo!</h1>
+<h1>Hallo!👋</h1>
 
 <p>Welcome again to this beautiful journey of learning how to code with Alx. The contents of this whole repository include my journey with the Frontend ALX program. This specific project is unique and is aimed towards improving my coding skills. I will highlight the objectives and requirements below, Enjoy 🤓</p>
 
